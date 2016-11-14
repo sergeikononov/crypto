@@ -11,7 +11,8 @@
 		853152671DCA153A00E20E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853152651DCA153A00E20E27 /* Main.storyboard */; };
 		853152691DCA153A00E20E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853152681DCA153A00E20E27 /* Assets.xcassets */; };
 		8531526C1DCA153B00E20E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8531526A1DCA153B00E20E27 /* LaunchScreen.storyboard */; };
-		853152741DCA1D1900E20E27 /* POWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853152731DCA1D1900E20E27 /* POWViewController.swift */; };
+		85E3CF351DD4D3FE0056B794 /* PViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E3CF341DD4D3FE0056B794 /* PViewController.swift */; };
+		85F914821DD4DE9500776F53 /* LegendreSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F914811DD4DE9500776F53 /* LegendreSymbolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		853152681DCA153A00E20E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8531526B1DCA153B00E20E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8531526D1DCA153B00E20E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		853152731DCA1D1900E20E27 /* POWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POWViewController.swift; sourceTree = "<group>"; };
+		85E3CF341DD4D3FE0056B794 /* PViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PViewController.swift; sourceTree = "<group>"; };
+		85F914811DD4DE9500776F53 /* LegendreSymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegendreSymbolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,8 @@
 			children = (
 				853152611DCA153A00E20E27 /* AppDelegate.swift */,
 				853152651DCA153A00E20E27 /* Main.storyboard */,
-				853152731DCA1D1900E20E27 /* POWViewController.swift */,
+				85F914811DD4DE9500776F53 /* LegendreSymbolViewController.swift */,
+				85E3CF341DD4D3FE0056B794 /* PViewController.swift */,
 				853152681DCA153A00E20E27 /* Assets.xcassets */,
 				8531526A1DCA153B00E20E27 /* LaunchScreen.storyboard */,
 				8531526D1DCA153B00E20E27 /* Info.plist */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F914821DD4DE9500776F53 /* LegendreSymbolViewController.swift in Sources */,
 				853152621DCA153A00E20E27 /* AppDelegate.swift in Sources */,
-				853152741DCA1D1900E20E27 /* POWViewController.swift in Sources */,
+				85E3CF351DD4D3FE0056B794 /* PViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = HAZAV255F2;
@@ -275,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = HAZAV255F2;

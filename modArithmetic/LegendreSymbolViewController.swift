@@ -14,12 +14,10 @@ class LegendreSymbolViewController: UIViewController {
         super.viewDidLoad()
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(LegendreSymbolViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-
-        // Do any additional setup after loading the view.
+        initializeTextFields()
     }
     
     func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
 
@@ -32,6 +30,11 @@ class LegendreSymbolViewController: UIViewController {
     @IBOutlet weak var denomirator: UITextField!
     @IBOutlet weak var result: UILabel!
     
+    func initializeTextFields() {
+        numerator.keyboardType = UIKeyboardType.numberPad
+        denomirator.keyboardType = UIKeyboardType.numberPad
+        
+    }
     func calculate(a: Int, p:Int) -> Int {
         if ((a>=p) || (a<0)) {
            return calculate(a: a%p, p: p)
